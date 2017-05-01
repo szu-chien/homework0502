@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>4-25作業</title>
+</head>
+<style type="text/css">
+
+h { color:green; font-size:3cm; }
+.right
+{
+position:absolute;
+right:100px;
+}
+.left
+{
+position:absolute;
+left:100px;
+
+}
+p1 { color:	#227700; font-size:0.5cm; }
+body {
+text-align: center; /*FOR IE5 專用才會置中*/
+}
+</style>
+<style type=text/css>
+
+body{
+
+background-image : url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx1qgVQNVHALlLlxalPYL9zXiv853S2QhVKByy-P-7o2GiaNAH"); /*背景圖存放路徑*/
+
+background-repeat : repeat; /*背景圖不要重複*/
+
+background-position : 90% 90%; /*放在 x 軸 90% y 軸 90% */
+
+background-attachment : fixed; /*背景固定*/
+
+}
+
+
+</style>
+
+<body>
+  <h>調查表</h>
+<form action="result.jsp" method="GET">
+<p1>姓名:</p1> <input type="text" name="name">
+<br />
+<p1>信箱:</p1> <input type="text" name="url" />
+<br>居住地:</p1>
+<select name="YourLocation">
+　<option value="Taipei">台北</option>
+　<option value="Taoyuan">桃園</option>
+　<option value="Hsinchu">新竹</option>
+　<option value="Miaoli">苗栗</option>
+</select><BR>
+<p1>專長</p1>
+<<form action="" method="post" name = "form">>
+    <input TYPE="checkbox" name="qwe" value="java" checked="checked">1.java
+    <input TYPE="checkbox" name="qwe" value="css">2.css
+    <input TYPE="checkbox" name="qwe" value="jsp">3.jsp
+    <INPUT TYPE="checkbox" name="qwe" value="c++">4.c++
+    <INPUT TYPE="checkbox" name="qwe" value="HTML">5.html<br>
+<p1>請選擇喜歡吃的水果</p1>
+<form name="FRU">
+<input type="radio" name="FRU" value="Apple"> 蘋果
+<input type="radio" name="FRU" value="Bananas"> 香蕉<br>
+<p1>觸碰程式設計已經多久了:</p1>
+<form id="form" action="" method="post">
+    <div>
+        <select id="inscompSelected" name="asd" multiple="multiple" class="lstSelected">
+            <option value="一年以下">一年以下</option>
+            <option value="兩年到三年">兩年到三年</option>
+            <option value="三年以上">三年以上</option>
+            <option value="從來沒碰過">從來沒碰過</option>
+        </select><br>
+         <p1>再多多推薦自己吧</p1>
+<input type="textarea"  style="width:300px;height:100px;" name="textarea"> 　
+</textarea>
+
+<input type="submit" value="提交" />
+</form>
+
+</body>
+</html>
